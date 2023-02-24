@@ -6,7 +6,7 @@ slices = int(input('Введите сколько кусочков вы хоти
 
 if (slices % horizontal_size == 0 or
         slices % vertical_size == 0) and \
-        slices != horizontal_size*vertical_size:
+        slices >= horizontal_size*vertical_size:
     print('Вы можете отломить от шоколадки необходимое количество долек ;)')
 else:
     print('Кто-то останется без шоколада :(')
